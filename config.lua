@@ -1,0 +1,6 @@
+require("user.options")
+require("user.plugins")
+require("user.lsp")
+require("user.keymappings")
+require("user.which-key")
+require("user.terminal")
