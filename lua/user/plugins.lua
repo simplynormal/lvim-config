@@ -138,5 +138,3 @@ lvim.plugins = {
     end,
   },
 }
-
-lvim.colorscheme = "tokyonight-moon"

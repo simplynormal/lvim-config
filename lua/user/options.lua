@@ -20,6 +20,9 @@ if vim.fn.has('win32') then
       ["*"] = "win32yank.exe -o --lf",
     },
   }
+
+  -- Set TS compiler to clang for Windows (Install with `choco install llvm`)
+  require "nvim-treesitter.install".compilers = { "clang" }
 end
 
 -- Show diagnostics in insert mode
@@ -30,7 +33,5 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
--- Set TS compiler to clang for Windows (Install with `choco install llvm`)
-if vim.fn.has("win32") == 1 then
-  require "nvim-treesitter.install".compilers = { "clang" }
-end
+-- Set the colorscheme
+lvim.colorscheme = "tokyonight-moon"
